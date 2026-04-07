@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-SafeBench: Welcome</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Uni-SafeBench - A Comprehensive Safety Benchmark">
+    <meta name="description" content="A comprehensive benchmark for evaluating safety in unified multimodal models">
+    <meta name="keywords" content="safety, benchmark, multimodal, machine learning, AI safety">
+    <meta name="author" content="Uni-SafeBench Team">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script defer src="static/js/bulma-carousel.min.js"></script>
+    <script defer src="static/js/bulma-slider.min.js"></script>
+    <script defer src="static/js/index.js"></script>
+    
+    <style>
+        .no-sort {
+            cursor: default;
+            pointer-events: none;
+            background-image: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <p style="font-size:18px; display: inline; margin-right: -2px; margin-top: 12px;">🔥</p>
+                    <a class="navbar-link">
+                        More Research
+                    </a>
+                    <div class="navbar-dropdown">
+                        <!-- TODO: Replace with your related works -->
+                        <a class="navbar-item" href="https://github.com/YOUR_REPO_1">
+                            <b>Related Work 1</b>
+                        </a>
+                        <a class="navbar-item" href="https://github.com/YOUR_REPO_2">
+                            <b>Related Work 2</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <div class="container" style="margin-bottom: 2vh;">
+                            <!-- Logo -->
+                            <div class="columns is-centered has-text-centered">
+                                <div class="column is-four-fifths">
+                                    <div class="content has-text-centered">
+                                        <!-- TODO: Replace with your logo -->
+                                        <img src="static/images/logo.png" alt="Uni-SafeBench Logo" width="60%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Title -->
+                        <h2 class="subtitle is-3 publication-subtitle" style="width: 100%;margin-bottom: 20px;">
+                            <strong>Does Synergy Come at a Cost?<br>Uni-SafeBench: A Safety Benchmark for Unified
+                                Multimodal Large Models</strong>
+                        </h2>
+    
+                        <!-- Authors -->
+                        <div class="is-size-5 publication-authors" style="width: 100%; margin: 15px auto;">
+                            <span class="author-block">
+                                Zixiang Peng<sup style="color:#18acfb;">1</sup><sup
+                                    style="color:#6fa8dc;">2</sup><sup>,</sup>
+                            </span>
+                            <span class="author-block">
+                                Yongxiu Xu<sup style="color:#18acfb;">1</sup><sup style="color:#6fa8dc;">2</sup><sup
+                                    style="font-family: 'Times New Roman';">✉</sup><sup>,</sup>
+                            </span>
+                            <span class="author-block">
+                                Qinyi Zhang<sup style="color:#ffac33;">3</sup><sup
+                                    style="color:#93c47d;">4</sup><sup>,</sup>
+                            </span>
+                            <span class="author-block">
+                                Jiexun Shen<sup style="color:#18acfb;">1</sup><sup
+                                    style="color:#6fa8dc;">2</sup><sup>,</sup>
+                            </span>
+                        </div>
+                        <div class="is-size-5 publication-authors" style="width: 100%; margin: 15px auto;">
+                            <span class="author-block">
+                                Yifan Zhang<sup style="color:#ffac33;">3</sup><sup
+                                    style="color:#93c47d;">4</sup><sup>,</sup>
+                            </span>
+                            <span class="author-block">
+                                Hongbo Xu<sup style="color:#18acfb;">1</sup><sup
+                                    style="color:#6fa8dc;">2</sup><sup>,</sup>
+                            </span>
+                            <span class="author-block">
+                                Yubin Wang<sup style="color:#18acfb;">1</sup><sup
+                                    style="color:#6fa8dc;">2</sup><sup>,</sup>
+                            </span>
+                            <span class="author-block">
+                                Gaopeng Gou<sup style="color:#18acfb;">1</sup><sup style="color:#6fa8dc;">2</sup>
+                            </span>
+                        </div>
+    
+                        <!-- Affiliations -->
+                        <div class="is-size-5 publication-authors" style="line-height: 1.6;">
+                            <span class="author-block">
+                                <sup style="color:#18acfb;">1</sup>IIE,
+                            </span>
+                            <span class="author-block">
+                                <sup style="color:#6fa8dc;">2</sup>School of Cyber Security, UCAS,
+                            </span>
+                            <span class="author-block">
+                                <sup style="color:#ffac33;">3</sup>CASIA,
+                            </span>
+                            <span class="author-block">
+                                <sup style="color:#93c47d;">4</sup>School of AI, UCAS
+                            </span>
+                            <br>
+                            <span class="author-block" style="font-size:20px; margin-top: 10px; display: inline-block;">
+                                <sup style="font-family: 'Times New Roman';">✉</sup>Corresponding Author
+                            </span>
+                        </div>
+    
+                        <!-- Links -->
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- arXiv Link -->
+                                <span class="link-block">
+                                    <a href="http://arxiv.org/abs/2604.00547"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+    
+                                <!-- Code Link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/pengzixiang2002/Uni_SafeBench"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+    
+                                <!-- Dataset Link -->
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/datasets/YOUR_DATASET"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <p style="font-size:18px">🤗</p>
+                                        </span>
+                                        <span>Dataset</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Abstract Section -->
+    <section class="section">
+        <div class="container" style="margin-bottom: 2vh;">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3" style="margin-top: -5%;">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                          Unified Multimodal Large Models (UMLMs) integrate understanding and generation capabilities within a single architecture. While this architectural unification, driven by the deep fusion of multimodal features, enhances model performance, it also introduces important yet underexplored safety challenges. Existing safety benchmarks predominantly focus on isolated understanding or generation tasks, failing to evaluate the holistic safety of UMLMs when handling diverse tasks under a unified framework. To address this, we introduce Uni-SafeBench, a comprehensive benchmark featuring a taxonomy of six major safety categories across seven task types. To ensure rigorous assessment, we develop Uni-Judger, a framework that effectively decouples contextual safety from intrinsic safety. Based on comprehensive evaluations across Uni-SafeBench, we uncover that while the unification process enhances model capabilities, it significantly degrades the inherent safety of the underlying LLM. Moreover, open-source UMLMs exhibit much lower safety performance than multimodal large models specialized for either generation or understanding tasks, particularly on the generation side. We open-source all resources to systematically expose these risks and foster safer AGI development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        /* 定义一个固定比例或最大高度的容器，防止页面抖动 */
+        .vis-container {
+            background-color: #fcfcfc;
+            border: 1px solid #efefef;
+            border-radius: 12px;
+            padding: 2rem;
+            min-height: 400px;
+            /* 根据你较大图片的高度调整 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+    
+        .vis-image {
+            max-width: 100%;
+            max-height: 600px;
+            /* 限制最大高度，防止过长 */
+            height: auto;
+            width: auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            display: none;
+            /* 默认隐藏 */
+        }
+    
+        /* 当对应的 tab 激活时显示图片 */
+        .vis-image.is-active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+    
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        /* 选项卡微调 */
+        .tabs.is-toggle li.is-active a {
+            background-color: #4169E1;
+            border-color: #4169E1;
+        }
+    </style>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3" style="margin-top: -5%; margin-bottom: 2rem;">Visualization</h2>
+    
+                    <div class="tabs is-centered is-toggle is-rounded" id="vis-tabs">
+                        <ul>
+                            <li data-target="fig-gap">
+                                <a><span>Safety Gap</span></a>
+                            </li>
+                            <li class="is-active" data-target="fig-framework">
+                                <a><span>Framework</span></a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="vis-container">
+                        <div id="fig-gap" class="vis-image">
+                            <img src="static/images/view.png" alt="Safety Gap Analysis">
+                            <p class="is-size-7 has-text-grey mt-4">Figure 1: The Unification-Safety Trade-off in
+                                Open-Source Unified Models</p>
+                        </div>
+                        <div id="fig-framework" class="vis-image is-active">
+                            <img src="static/images/framework.png" alt="Framework">
+                            <p class="is-size-7 has-text-grey mt-4">Figure 2: Uni-SafeBench Overall Framework</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.querySelectorAll('#vis-tabs li').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 切换 Tab 状态
+                document.querySelectorAll('#vis-tabs li').forEach(t => t.classList.remove('is-active'));
+                tab.classList.add('is-active');
+    
+                // 切换图片显示
+                const target = tab.dataset.target;
+                document.querySelectorAll('.vis-image').forEach(img => {
+                    img.classList.remove('is-active');
+                });
+                document.getElementById(target).classList.add('is-active');
+            });
+        });
+    </script>
+
+
+    <section class="hero is-light is-small">
+        <div class="hero-body has-text-centered">
+            <h2 class="title is-2">🏆 Uni-SafeBench Leaderboard</h2>
+            <p class="subtitle is-5">
+                Comprehensive Safety Ranking for Unified MLLMs
+            </p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+    
+            <div class="box" style="background: #f8f9fa; border-left: 5px solid #4169E1; margin-bottom: 30px;">
+                <div class="columns is-multiline">
+                    <div class="column is-two-thirds">
+                        <h5 class="title is-6">📊 Metrics Definition</h5>
+                        <div class="content is-small">
+                            <ul style="margin-top: 0;">
+                                <li><strong>C-Unsafe (Contextual Unsafe) ↓</strong>: The rate of unsafe responses in
+                                    specific contexts. <span class="tag is-light is-success">Lower is better</span></li>
+                                <li><strong>C-Reject (Contextual Rejection) ↑</strong>: The rate of successful refusals
+                                    for unsafe prompts. <span class="tag is-light is-danger">Higher is better</span>
+                                </li>
+                                <li><strong>I-Unsafe (Intrinsic Unsafe) ↓</strong>: The rate of intrinsic unsafe content
+                                    generation. <span class="tag is-light is-success">Lower is better</span></li>
+                                <li><strong>Both-Safe (Overall Safety) ↑</strong>: Comprehensive safety score across
+                                    tasks. <span class="tag is-light is-danger">Higher is better</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h5 class="title is-6">📝 Legend</h5>
+                        <p class="is-size-7">
+                            <span style="color: #4169E1; font-weight: bold;">Blue Bold</span> = 1<sup>st</sup> Best<br>
+                            <span style="color: #4169E1; text-decoration: underline;">Blue Underline</span> =
+                            2<sup>nd</sup> Best<br>
+                            <span style="font-style: italic;">Italics</span> = 3<sup>rd</sup> Best<br>
+                            <strong>†</strong>: Strictly safety-aligned model<br>
+                            <strong>‡</strong>: Image generation API unavailable
+                        </p>
+                    </div>
+                </div>
+                <div class="notification is-warning is-light"
+                    style="padding: 0.5rem 1rem; margin-bottom: 0; font-size: 0.9em;">
+                    <strong>📌 Note:</strong> Detailed data can be found in the <strong>Safety Evaluation
+                        Results</strong> section and the tables in our paper.
+                </div>
+            </div>
+    
+            <div class="box">
+                <h3 class="title is-4" style="text-align: center; margin-bottom: 20px !important; display: block;">
+                    Aggregated Safety Performance
+                </h3>
+                <p class="subtitle is-6 has-text-grey"
+                    style="text-align: center; margin-top: 10px; margin-bottom: 25px; line-height: 1.5;">
+                    Weighted average performance across all supported tasks
+                </p>
+    
+                <div style="overflow-x: auto;">
+                    <table class="table is-hoverable is-striped is-fullwidth" style="font-size: 0.95em;">
+                        <thead>
+                            <tr style="background: #EBEEF5; border-bottom: 2px solid #dbdbdb;">
+                                <th>Model</th>
+                                <th style="text-align: center;">Tasks Supported</th>
+                                <th style="text-align: center;" title="Contextual Unsafe (Lower is better)">C-Unsafe ↓
+                                </th>
+                                <th style="text-align: center;" title="Contextual Rejection (Higher is better)">C-Reject
+                                    ↑</th>
+                                <th style="text-align: center;" title="Intrinsic Unsafe (Lower is better)">I-Unsafe ↓
+                                </th>
+                                <th style="text-align: center;" title="Overall Safety Score (Higher is better)">
+                                    Both-Safe ↑</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: #eef3fc;">
+                                <td colspan="6" style="font-weight: bold; text-align: center; color: #3273dc;">
+                                    🤖 Large Language Models (LLMs)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Qwen2.5†</td>
+                                <td style="text-align: center;">1</td>
+                                <td style="text-align: center; color: #4169E1; text-decoration: underline;">1.90%</td>
+                                <td style="text-align: center;">27.30%</td>
+                                <td style="text-align: center; color: #4169E1; text-decoration: underline;">0.95%</td>
+                                <td style="text-align: center; color: #4169E1; text-decoration: underline;">98.10%</td>
+                            </tr>
+                            <tr>
+                                <td>DeepSeek-LLM-Chat†</td>
+                                <td style="text-align: center;">1</td>
+                                <td style="text-align: center;">7.94%</td>
+                                <td style="text-align: center; color: #4169E1; text-decoration: underline;">61.75%</td>
+                                <td style="text-align: center;">7.30%</td>
+                                <td style="text-align: center;">91.75%</td>
+                            </tr>
+    
+                            <tr style="background: #eef3fc;">
+                                <td colspan="6" style="font-weight: bold; text-align: center; color: #3273dc;">
+                                    👁️ Vision Language Models (VLMs)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Qwen2.5-VL†</td>
+                                <td style="text-align: center;">5</td>
+                                <td style="text-align: center;">5.78%</td>
+                                <td style="text-align: center;">15.26%</td>
+                                <td style="text-align: center;">4.01%</td>
+                                <td style="text-align: center;">92.63%</td>
+                            </tr>
+                            <tr>
+                                <td>DeepSeek-VL-Chat†</td>
+                                <td style="text-align: center;">5</td>
+                                <td style="text-align: center;">12.37%</td>
+                                <td style="text-align: center;">38.15%</td>
+                                <td style="text-align: center;">11.16%</td>
+                                <td style="text-align: center;">84.48%</td>
+                            </tr>
+                            <tr>
+                                <td>DeepSeek-VL-Base</td>
+                                <td style="text-align: center;">5</td>
+                                <td style="text-align: center;">35.17%</td>
+                                <td style="text-align: center;">25.95%</td>
+                                <td style="text-align: center;">31.68%</td>
+                                <td style="text-align: center;">61.59%</td>
+                            </tr>
+    
+                            <tr style="background: #eef3fc;">
+                                <td colspan="6" style="font-weight: bold; text-align: center; color: #3273dc;">
+                                    🌐 Open-Source Unified Models
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chameleon†‡</td>
+                                <td style="text-align: center;">5</td>
+                                <td style="text-align: center; color: #4169E1; font-weight: bold;">0.60%</td>
+                                <td style="text-align: center; color: #4169E1; font-weight: bold;">82.67%</td>
+                                <td style="text-align: center; color: #4169E1; font-weight: bold;">0.30%</td>
+                                <td style="text-align: center; color: #4169E1; font-weight: bold;">99.31%</td>
+                            </tr>
+                            <tr>
+                                <td>Show-o2</td>
+                                <td style="text-align: center;">6</td>
+                                <td style="text-align: center;">26.31%</td>
+                                <td style="text-align: center;">24.54%</td>
+                                <td style="text-align: center;">23.10%</td>
+                                <td style="text-align: center;">68.89%</td>
+                            </tr>
+                            <tr>
+                                <td>Tar-7B</td>
+                                <td style="text-align: center; font-weight: bold;">7</td>
+                                <td style="text-align: center;">23.55%</td>
+                                <td style="text-align: center;">22.15%</td>
+                                <td style="text-align: center;">20.45%</td>
+                                <td style="text-align: center;">67.91%</td>
+                            </tr>
+                            <tr>
+                                <td>Harmon</td>
+                                <td style="text-align: center;">6</td>
+                                <td style="text-align: center;">28.41%</td>
+                                <td style="text-align: center;">19.15%</td>
+                                <td style="text-align: center;">22.77%</td>
+                                <td style="text-align: center;">67.20%</td>
+                            </tr>
+                            <tr>
+                                <td>Tar-1.5B</td>
+                                <td style="text-align: center;">6</td>
+                                <td style="text-align: center;">27.68%</td>
+                                <td style="text-align: center;">17.97%</td>
+                                <td style="text-align: center;">24.46%</td>
+                                <td style="text-align: center;">66.79%</td>
+                            </tr>
+                            <tr>
+                                <td>Janus-Pro</td>
+                                <td style="text-align: center;">6</td>
+                                <td style="text-align: center;">37.16%</td>
+                                <td style="text-align: center;">17.12%</td>
+                                <td style="text-align: center;">34.91%</td>
+                                <td style="text-align: center;">57.45%</td>
+                            </tr>
+                            <tr>
+                                <td>Bagel</td>
+                                <td style="text-align: center; font-weight: bold;">7</td>
+                                <td style="text-align: center;">41.65%</td>
+                                <td style="text-align: center;">7.32%</td>
+                                <td style="text-align: center;">36.58%</td>
+                                <td style="text-align: center;">53.11%</td>
+                            </tr>
+                            <tr>
+                                <td>JanusFlow</td>
+                                <td style="text-align: center;">6</td>
+                                <td style="text-align: center;">54.76%</td>
+                                <td style="text-align: center;">3.36%</td>
+                                <td style="text-align: center;">51.33%</td>
+                                <td style="text-align: center;">40.18%</td>
+                            </tr>
+                            <tr>
+                                <td>Emu3</td>
+                                <td style="text-align: center;">6</td>
+                                <td style="text-align: center;">55.90%</td>
+                                <td style="text-align: center;">1.66%</td>
+                                <td style="text-align: center;">47.56%</td>
+                                <td style="text-align: center;">38.75%</td>
+                            </tr>
+    
+                            <tr style="background: #eef3fc;">
+                                <td colspan="6" style="font-weight: bold; text-align: center; color: #3273dc;">
+                                    🔒 Closed-Source Unified Models
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GPT-4o‡</td>
+                                <td style="text-align: center;">5</td>
+                                <td style="text-align: center; font-style: italic;">4.53%</td>
+                                <td style="text-align: center; font-style: italic;">58.97%</td>
+                                <td style="text-align: center; font-style: italic;">2.46%</td>
+                                <td style="text-align: center; font-style: italic;">94.61%</td>
+                            </tr>
+                            <tr style="background: #EBFAF0; border-left: 3px solid #00d1b2;">
+                                <td>Gemini</td>
+                                <td style="text-align: center; font-weight: bold;">7</td>
+                                <td style="text-align: center;">9.63%</td>
+                                <td style="text-align: center;">46.78%</td>
+                                <td style="text-align: center;">7.89%</td>
+                                <td style="text-align: center;">87.17%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+    
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3" style="margin-bottom: 0.9rem;">Data Examples</h2>
+                    <div class="content has-text-justified">
+                        <div class="box" style="margin: 1rem 0;">
+                            <div class="content has-text-centered" style="margin-top: 1rem;">
+                                <img src="static/images/case.jpg" alt="Data Examples of 7 Tasks" width="100%" />
+                                <p style="text-align: center;" class="mt-3 has-text-grey-dark">
+                                    <strong>Figure 1: Examples of Uni-SafeBench Tasks.</strong>
+                                    We present qualitative examples for the seven tasks, covering generation,
+                                    understanding, and unified safety evaluation scenarios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Benchmark Statistics</h2>
+                    <div class="content has-text-justified">
+                        <div class="box m-5">
+                            <div class="content has-text-centered" style="margin-top: 2rem;">
+    
+                                <h4 class="title is-5">Sample Distribution</h4>
+                                <img src="static/images/data_s.png" alt="Statistics Table" width="95%" />
+                                <p style="text-align: center;" class="mt-2 mb-5 has-text-grey-dark">
+                                    <strong>Table 1: Detailed Statistics.</strong>
+                                    The distribution of safety categories across Generation and Understanding tasks,
+                                    showing the volume of prompts for each unsafe category.
+                                </p>
+    
+                                <hr style="width: 50%; margin: 2rem auto;">
+    
+                                <h4 class="title is-5">Keyword Analysis</h4>
+                                <img src="static/images/word.png" alt="Word Clouds" width="100%" />
+                                <p style="text-align: center;" class="mt-2 has-text-grey-dark">
+                                    <strong>Figure 2: Keyword Visualization.</strong>
+                                    Word clouds illustrating high-frequency keywords found within the prompts across the
+                                    different safety tasks.
+                                </p>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+
+    <section class="hero is-light is-small">
+        <div class="hero-body has-text-centered">
+            <h1 class="title is-1">Experiment Results</h1>
+        </div>
+    </section>
+    
+    <section class="section">
+    
+        <div class="columns is-centered">
+            <div class="column is-full has-text-centered content">
+                <h2 class="title is-3">Comprehensive Evaluation</h2>
+                <div class="box m-5">
+                    <div class="content has-text-centered">
+                        <img src="static/images/all_data.png" alt="Main Results Table Panel A and B" width="70%" />
+                        <p class="has-text-grey-dark is-size-6 mt-2">
+                            <strong>Table 1:</strong> Detailed generation and understanding task performance across
+                            LLMs, VLMs, and Unified Models.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="columns is-centered">
+            <div class="column is-half has-text-centered content">
+                <h3 class="title is-4">Safety by Category</h3>
+                <div class="box m-2" style="height: 100%;">
+                    <div class="content has-text-centered"
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+                        <img src="static/images/cat.png" alt="Category Safety Analysis" width="80%" />
+                        <p class="has-text-grey-dark is-size-6 mt-2">
+                            <strong>Table 2:</strong> Safety rates breakdown by categories (e.g., Biased Opinion,
+                            Toxicity).
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="column is-half has-text-centered content">
+                <h3 class="title is-4">Judge Accuracy</h3>
+                <div class="box m-2" style="height: 100%;">
+                    <div class="content has-text-centered"
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+                        <img src="static/images/uni-judge.png" alt="Uni-Judge Accuracy" width="80%" />
+                        <p class="has-text-grey-dark is-size-6 mt-2">
+                            <strong>Table 3:</strong> Contextual and Intrinsic accuracy metrics for various task
+                            types.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+    </section>
+    
+    <!-- Citation Section -->
+    <section class="hero is-light is-small">
+        <div class="hero-body has-text-centered">
+            <h1 class="title is-1" id="citation">Citation</h1>
+        </div>
+    </section>
+    
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <pre><code>@article{peng2026does,
+                title={Does Unification Come at a Cost? Uni-SafeBench: A Safety Benchmark for Unified Multimodal Large Models},
+                author={Peng, Zixiang and Xu, Yongxiu and Zhang, Qinyi and Shen, Jiexun and Zhang, Yifan and Xu, Hongbo and Wang, Yubin and Gou, Gaopeng},
+                journal={arXiv preprint arXiv:2604.00547},
+                year={2026}
+              }</code></pre>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p style="text-align: center;">
+                        This website is adapted from <a href="https://nerfies.github.io">Nerfies</a> and <a
+                            href="https://video-mme.github.io/">Video-MME</a>,
+                        licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                            Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
